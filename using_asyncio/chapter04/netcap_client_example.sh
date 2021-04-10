@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Subscription channel:\x00\x00\x00\x04Info
+# Sender channel:\x00\x00\x00\x05Bruno
+# Payload:\x00\x00\x00\x04Data
+echo -n -e "\x00\x00\x00\x04Info\x00\x00\x00\x0a/topic/foo\x00\x00\x00\x04Data" | nc 127.0.0.1 25000
